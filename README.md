@@ -240,7 +240,7 @@ acl THREE time WHF 00:00-09:00
 
 - Edit konfigurasi squid pada /etc/squid/squid.conf sebagai berikut
 
-<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/8A.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/7B.JPG" >
 
 #### Pada nomer 10, kami belum menemukan solusi untuk redirect google.com ke monta.if.its.ac.id. 
 #### Namun, dengan konfigurasi yang sama kami dapat redirect dari facebook.com ke monta.if.its.ac.id
