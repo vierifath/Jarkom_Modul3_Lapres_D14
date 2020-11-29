@@ -25,6 +25,9 @@ ANGGOTA         :
 
 - Serta memberikan perintah apt-get update juga pada setiap UML untuk melakukan update.
 
+
+
+
 ### Soal No. 2
 #### 2. SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client
 
@@ -50,10 +53,13 @@ ANGGOTA         :
 
 
 
+
 ### Soal No. 3
 #### 3. Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200
 
-- nano etc/default/isc-dhcp-server dalam tuban
+- Pertama buka nano isc-dhcp-server dalam tuban
+
+      etc/default/isc-dhcp-server
 
 - menambahkan INTERFACEv4="eth0"
 
@@ -61,13 +67,93 @@ ANGGOTA         :
 
 - nano etc/dhcp/dhcp.conf dalam tuban
 
+- Konfigurasi Tuban sebagai berikut :
+
 - service isc-dhcp-server restart
 
 <img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/3B.JPG" >
 
+- Melakukan konfigurasi Gresik dengan melakukan
 
+      ifconfig
+      
 <img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/3C.JPG" >
+
+- Melakukan konfigurasi Sidoarjo dengan melakukan
+
+      ifconfig
+      
 <img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/3D.JPG" >
+
+
+
+
+
+### Soal No. 4
+#### 4. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
+
+- Buka dhcp nano etc/dhcp/dhcp.conf dalam tuban
+
+      nano etc/dhcp/dhcp.conf
+
+- Ubah range IP
+- Konfigurasi pada dhcp.conf pada Tuban sebagai berikut :
+
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/4A.JPG" >
+
+
+- Lakukan konfigurasi pada Banyuwangi dan Madiun dengan melakukan ifconfig
+
+      ifconfig
+      
+
+
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/4B.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/4C.JPG" >
+
+
+
+
+
+### Soal No. 5
+#### 5. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
+
+- Lakukan konfigurasi pada dhcp.conf dalam tuban dengan mengetikkan
+
+      nano etc/dhcp/dhcp.conf 
+      
+- Mengubah domain-name-servers sebagai berikut :
+
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/5A.JPG" >
+
+
+
+
+### Soal No. 6
+#### 6. Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
+
+- Lakukan konfigurasi pada dhcp.conf dalam tuban dengan mengetikkan
+
+      nano etc/dhcp/dhcp.conf 
+      
+- Ubah default-lease-time dan max-lease-time pada subnet 1 dan 3
+- Pada subnet 1 diaru default-lease-time 300 (5menit)
+- Pada subnet 3 ditulis default-lease-time 600 (10menit)
+- Konfigurasinya sebagai berikut :
+
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/6A.JPG" >
+
+
+
+
+### Soal No. 7
+#### 7. Akses ke proxy hanya bisa dilakukan oleh Anri sendiri sebagai user TA.
+
+- Pastikan pada UML Mojokerto sudah terinstall squid dan apache2-utils. Lalu ketikkan:
+- Buat user dan password baru dengan mengetikkan:
+htpasswd -c /etc/squid/passwd userta_c04
+
+
 
 
 
