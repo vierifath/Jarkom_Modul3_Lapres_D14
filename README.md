@@ -285,7 +285,7 @@ acl THREE time WHF 00:00-09:00
 
 - Testing : Buka browser, maka akan muncul authencation required seperti sebagai berikut :
 
-<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/12B.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul3_Lapres_D14/blob/main/img/12C.JPG" >
 
 
 
